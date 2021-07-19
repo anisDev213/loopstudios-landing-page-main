@@ -1,1 +1,1 @@
-# loopstudios-landing-page-main
+# Loopstudios-landing-page

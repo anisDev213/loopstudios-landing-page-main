@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Loopstudios landing page</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/utilites.css" >
+</head>
+<body>
+
+
+   <section class="header">
+
+
+        <nav class="nav">
+          
+          <div class="nav-brand">
+            <img src="./images/logo.svg" >
+          </div>
+
+
+          <div class="toggle">
+            <img src="./images/icon-hamburger.svg" >
+          </div>
+
+          <ul class="nav-links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+
+        </nav>
+
+
+        <div class="header-text" >
+          <h3 class="text-uppercase" >Immersive <br> experiences <br> that deliver</h3>
+        </div>
+
+
+   </section>
+
+
+   <!-- Header -->
+
+
+   <!-- About -->
+   <section class="about">
+      <img src="./images/desktop/image-interactive.jpg" >
+
+      <div class="about-text">
+        <h2 class="text-uppercase">The leader in <br> interactive VR </h2>
+        <p>
+          Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand. 
+        </p>
+      </div>
+   </section>
+   <!-- About -->
+
+
+   <!-- Gallery -->
+   <section class="gallery">
+
+       <div class="row">
+           <h1>Our Creations</h1>
+           <button class="btn btn-outline-black">SEE ALL</button>
+       </div>
+
+
+       <div class="gallery-container">
+        
+        <div class="img">
+          <img src="./images/desktop/image-deep-earth.jpg" >
+          <div class="overly">
+            <h3>DEEP <br> EARTH</h3>
+          </div>
+        </div>
+
+        <div class="img">
+          <img src="./images/desktop/image-night-arcade.jpg" >
+          <div class="overly">
+            <h3>NIGHT <br> ARCADE</h3>
+          </div>
+        </div>
+
+        <div class="img">
+          <img src="./images/desktop/image-soccer-team.jpg" >
+          <div class="overly">
+            <h3>SOCCER <br> TEAM VR</h3>
+          </div>
+        </div>
+
+
+        <div class="img">
+          <img src="./images/desktop/image-grid.jpg" >
+          <div class="overly">
+            <h3>THE <br> GRID</h3>
+          </div>
+        </div>
+
+
+        <div class="img">
+          <img src="./images/desktop/image-from-above.jpg" >
+          <div class="overly">
+            <h3>FROM UP <br> ABOVE VR</h3>
+          </div>
+        </div>
+
+
+        <div class="img">
+          <img src="./images/desktop/image-pocket-borealis.jpg" >
+          <div class="overly">
+            <h3>POCKET <br> BOREALIS</h3>
+          </div>
+        </div>
+
+
+        <div class="img">
+          <img src="./images/desktop/image-curiosity.jpg" >
+          <div class="overly">
+            <h3>THE <br> CURIOSITY</h3>
+          </div>
+        </div>
+
+
+        <div class="img">
+          <img src="./images/desktop/image-fisheye.jpg" >
+          <div class="overly">
+            <h3>MAKE IT <br> FISHEYE</h3>
+          </div>
+        </div>
+
+
+       </div>
+
+
+   </section>
+   <!-- Gallery -->
+
+
+
+   <!-- Footer -->
+   <footer class="footer">
+       <div class="row">
+
+
+         <div class="footer-col">
+           <img src="./images/logo.svg" >
+           <ul>
+             <li><a href="#" >About</a></li>
+             <li><a href="#" >Careers</a></li>
+             <li><a href="#" >Events</a></li>
+             <li><a href="#" >Products</a></li>
+             <li><a href="#" >Support</a></li>
+           </ul>
+         </div>
+
+
+         <div class="footer-col">
+            <div class="social-links">
+              <a href="#"><img src="./images/icon-facebook.svg" ></a>
+              <a href="#"><img src="./images/icon-twitter.svg" ></a>
+              <a href="#"><img src="./images/icon-pinterest.svg"></a>
+              <a href="#"><img src="./images/icon-instagram.svg" ></a>
+            </div>
+            <p>© 2021 Loopstudios. All rights reserved.</p>
+         </div>
+
+
+       </div>
+   </footer>
+   <!-- Footer -->
+
+
+   <!-- JAVASCRIPT -->
+   <script>
+  const toggle = document.querySelector('.toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  toggle.addEventListener("click", () => {
+    navLinks.classList.toggle('show');
+
+    if(navLinks.classList.contains('show')) {
+      toggle.querySelector('img').src = "./images/icon-close.svg";
+      toggle.style.position = "fixed";
+      document.querySelector('.nav-brand').style.position = "fixed";
+    }
+    else {
+      toggle.querySelector('img').src = "./images/icon-hamburger.svg";
+      toggle.style.position = "static";
+      document.querySelector('.nav-brand').style.position = "static";
+    }
+
+  } );
+   </script>
+   <!-- JAVASCRIPT -->
+</body>
+</html>
